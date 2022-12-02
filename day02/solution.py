@@ -26,3 +26,20 @@ for rnd in rounds:
     score += play[(opponent, me)] + choice[me]
 
 print(score)
+
+# Part 2
+
+scores = {
+    'X': 0,
+    'Y': 3,
+    'Z': 6
+}
+
+new_score = 0
+for rnd in rounds:
+    opponent, move = rnd.split()
+    for k, v in play.items():
+        if scores[move] == v and opponent == k[0]:
+            new_score += v + choice[k[1]]
+
+print(new_score)
