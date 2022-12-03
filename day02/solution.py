@@ -28,7 +28,6 @@ for rnd in rounds:
 print(score)
 
 # Part 2
-
 scores = {
     'X': 0,
     'Y': 3,
