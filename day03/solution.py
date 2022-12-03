@@ -10,6 +10,7 @@ priority_sum = sum(priority[str(*set(rucksack[:len(rucksack) // 2]).intersection
                    for rucksack in rucksacks)
 print(priority_sum)
 
+
 # Part 2
 groups = [rucksacks[i:i + 3] for i in range(0, len(rucksacks), 3)]
 
