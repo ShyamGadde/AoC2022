@@ -11,8 +11,12 @@ for section in sections:
     assignment2 = set(range(assignment2_str[0], assignment2_str[1] + 1))
     if assignment1.issubset(assignment2) or assignment2.issubset(assignment1):
         overlaps += 1
+
+    # Part 2
     if assignment1.intersection(assignment2):
         intersections += 1
 
 print(overlaps)
+
+# Part 2
 print(intersections)
